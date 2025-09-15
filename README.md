@@ -1,1 +1,3 @@
-# NLP1
+Q4.3 Reflect (4–5 sentences): o Did both models give the same distance? o Which operations (insert/delete/substitute) were most useful here? o How would the choice of model affect applications like spell check vs. DNA alignment?
+
+A: Both models did not give the same distance: Model A gave 3 edits while Model B gave 4. Under Model A, substitutions were cheap, so a substitution was used alongside insertions. Under Model B, substitutions were expensive, so the algorithm favored insertions and deletions instead. This shows that the relative cost of operations changes which path is considered “optimal.” In spell-check applications, substitutions are often most useful because typos usually involve replacing one letter with another. In contrast, DNA alignment often benefits from cheaper insertions and deletions, since mutations more commonly involve insertions or deletions of bases rather than simple substitutions.
